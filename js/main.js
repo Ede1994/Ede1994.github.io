@@ -53,14 +53,6 @@
     const countEl = document.getElementById("country-count");
     const target = config.visitedCountries.length;
     animateCount(countEl, target);
-
-    const list = document.getElementById("country-list");
-    config.visitedCountries.forEach((country, index) => {
-      const item = document.createElement("li");
-      item.textContent = country.name;
-      item.style.animationDelay = `${index * 40}ms`;
-      list.appendChild(item);
-    });
   }
 
   function animateCount(element, target) {

@@ -66,6 +66,8 @@ window.SITE_CONFIG = {
     { code: "GRC", name: "Greece" },
     { code: "HUN", name: "Hungary" },
     { code: "BGR", name: "Bulgaria" },
+    { code: "HRV", name: "Croatia" },
+    { code: "CZE", name: "Czech Republic" },
     { code: "TUN", name: "Tunisia" },
   ],
 };

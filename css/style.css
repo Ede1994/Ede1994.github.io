@@ -355,25 +355,6 @@ body {
   background: var(--map-default);
 }
 
-.country-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin: 1rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.country-list li {
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 0.85rem;
-  font-weight: 500;
-  animation: pop-in 0.4s ease both;
-}
-
 .site-footer {
   position: relative;
   z-index: 1;
