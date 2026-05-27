@@ -1,30 +1,36 @@
-# Eric Einspänner — Personal Website
+# Personal Website
 
-A minimal personal landing page for [GitHub Pages](https://pages.github.com/), with links to professional profiles and an interactive world map of countries visited.
+A minimal static landing page for [GitHub Pages](https://pages.github.com/). Fork or clone this repo, edit a single config file, and deploy your own site.
 
-## Features
+## Getting started
 
-- Clean, responsive one-page layout
-- Links to LinkedIn, employer, Google Scholar, GitHub portfolio, and email
-- Dark / light theme toggle (remembers your choice)
-- Typing animation for research focus areas
-- Live local time (Magdeburg)
-- Subtle floating particle background
-- Interactive world map — hover visited countries to see their names
+1. **Use this repo**
+   - **Fork** it on GitHub, or **clone** it locally:
+     ```bash
+     git clone https://github.com/YOUR_USERNAME/YOUR_USERNAME.github.io.git
+     cd YOUR_USERNAME.github.io
+     ```
+2. **Personalize** — see [Customize](#customize) below.
+3. **Deploy** — see [Deploy to GitHub Pages](#deploy-to-github-pages) below.
 
 ## Customize
 
-Edit `js/config.js` to update:
+Most content is driven by `js/config.js`. Update:
 
-- Your name, tagline, and location
-- All external links (especially Google Scholar URL)
-- Countries you've visited
+- Name, tagline, location, and timezone
+- Profile links (LinkedIn, employer, Google Scholar, portfolio, email, etc.)
 - Typing animation phrases
+- Countries visited on the world map (ISO 3166-1 alpha-3 codes)
+
+For the page title and search/social preview text, also edit the `<title>` and `<meta name="description">` tags in `index.html`.
+
+Styles live in `css/style.css` if you want to adjust colors or layout.
 
 ## Local preview
 
+From the project root:
+
 ```bash
-cd Ede1994.github.io
 python3 -m http.server 8080
 ```
 
@@ -32,23 +38,20 @@ Open http://localhost:8080
 
 ## Deploy to GitHub Pages
 
-1. Create a repository named **`Ede1994.github.io`** on GitHub (must match your username).
-2. Push this folder:
+For a user site at `https://YOUR_USERNAME.github.io`, create a repository named **`YOUR_USERNAME.github.io`** (it must match your GitHub username exactly).
+
+Push your changes:
 
 ```bash
-git remote add origin git@github.com:Ede1994/Ede1994.github.io.git
+git remote add origin git@github.com:YOUR_USERNAME/YOUR_USERNAME.github.io.git
 git add .
 git commit -m "Add personal website"
 git push -u origin main
 ```
 
-3. In the repo: **Settings → Pages → Build and deployment**
-   - Source: **Deploy from a branch**
-   - Branch: **main** / **/ (root)**
+Then in the repo: **Settings → Pages → Build and deployment**
 
-Your site will be live at **https://ede1994.github.io** within a few minutes.
+- Source: **Deploy from a branch**
+- Branch: **main** / **/ (root)**
 
-## Before you publish
-
-- [ ] Verify your LinkedIn URL
-- [ ] Update the portfolio link if you have a dedicated portfolio site
+The site is usually live within a few minutes at **https://YOUR_USERNAME.github.io**.
